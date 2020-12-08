@@ -2,17 +2,71 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-  <title>Social graphs and interactions 2020 - The Danish Parliment</title>
-  <meta name="description" content="Social graphs and interactions 2020 - The Danish Parliment">
-  <meta name="author" content="agick">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Social graphs and interactions 2020 - The Danish Parliment</title>
+    <meta name="description" content="Social graphs and interactions 2020 - The Danish Parliment">
+    <meta name="author" content="agick">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
-</body>
+    <div class="parallax" style='background-image: url("img/folketinget.jpg");height:100%;min-height: 800px;'>
+        <div class="parallax-wrapper">
+            <div>
+                <h1>Uncovering the Danish Parliment</h1>
+            </div>
+        </div>
+    </div>
+    <div class="basic-container with-blue-border" style="background-color: #252627;">
+        <div class="text-container">
+            <p>Is something rotten in the state of Denmark? Well it's time to find out...</p>
+            <p>In this article we will go over what we have uncovered by looking at all public information about The Danish Parliment.</p>
+        </div>
+   
+    </div>
+    <div class="parallax" style='background-image: url("img/christiansborg.jpg");height:500px;'>
+        <div class="parallax-wrapper">
+            <div>
+                <h1>The suspects</h1>
+            </div>
+        </div>
+    </div>
+    <div class="basic-container with-blue-border" style="background-color: #252627;">
+        <div class="black-fill"></div>
+        
+        <div class="menu">
+            <div class="menubar">
+                <div class="menubaritem menubaritem-selected" data-value="socialdemokratiet"><img src="img/logo/Socialdemokratiet.png"/></div>
+                <div class="menubaritem" data-value="venstre"><img src="img/logo/venstre.png"/></div>
+                <div class="menubaritem" data-value="radikale-venstre"><img src="img/logo/radikale_venstre.png"/></div>
+                <div class="menubaritem" data-value="socialistiske_folkeparti"><img src="img/logo/socialistiske_folkeparti.svg"/></div>
+            </div>
+            <div class="menulineseperator"></div>
+            <div class="menucontent">
+                <div class="menucontentitem menucontentitemselected" data-value="socialdemokratiet">
+                    <img src="img/wordclouds/S.png" class="wordcloud">
+                </div>
+                <div class="menucontentitem" data-value="venstre">
+                    <img src="img/wordclouds/V.png" class="wordcloud">
+                </div>
+                <div class="menucontentitem" data-value="radikale-venstre">
+                    <img src="img/wordclouds/RV.png" class="wordcloud">
+                </div>
+                <div class="menucontentitem" data-value="socialistiske_folkeparti">
+                    <img src="img/wordclouds/SF.png" class="wordcloud">
+                </div>
+            </div>
+        </div>
+        
+
+        
+   
+    </div>
+    <script src="js/scripts.js"></script>
+</body> 
 </html>
