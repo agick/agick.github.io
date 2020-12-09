@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <title>Social graphs and interactions 2020 - The Danish Parliment</title>
     <meta name="description" content="Social graphs and interactions 2020 - The Danish Parliment">
@@ -22,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="basic-container with-blue-border" style="background-color: #252627;">
+    <div class="basic-container" style="background-color: #252627;">
         <div class="text-container">
             <p>Is something rotten in the state of Denmark? Well it's time to find out...</p>
             <p>In this article we will go over what we have uncovered by looking at all public information about The Danish Parliment.</p>
@@ -36,9 +37,11 @@
             </div>
         </div>
     </div>
-    <div class="basic-container with-blue-border" style="background-color: #252627;">
-        <div class="black-fill"></div>
-        
+    <div class="basic-container" style="background-color: #252627;">
+        <div class="text-container">
+            <p>We will start by looking at the political parties. We will look into what exactly they say during the meetings at the parliments.</p>
+            <p>Click on a party to inspect it!</p>
+        </div>
         <div class="menu">
             <div class="menubar">
                 <div class="menubaritem menubaritem-selected" data-value="socialdemokratiet"><img src="img/logo/Socialdemokratiet.png"/></div>
@@ -46,27 +49,75 @@
                 <div class="menubaritem" data-value="radikale-venstre"><img src="img/logo/radikale_venstre.png"/></div>
                 <div class="menubaritem" data-value="socialistiske_folkeparti"><img src="img/logo/socialistiske_folkeparti.svg"/></div>
             </div>
-            <div class="menulineseperator"></div>
+            <div class="lineseperator"></div>
             <div class="menucontent">
                 <div class="menucontentitem menucontentitemselected" data-value="socialdemokratiet">
+                    <h1>Socialdemokratiet</h1>
+                    <p>What Socialdemokratiet are talking about in the parliment...</p>
                     <img src="img/wordclouds/S.png" class="wordcloud">
+                    <p>Do you want to know more about Socialdemokratiet? Check out the <a href="https://da.wikipedia.org/wiki/Socialdemokratiet">Wikipage</a> about them</p>
                 </div>
                 <div class="menucontentitem" data-value="venstre">
+                    <h1>Venstre</h1>
+                    <p>What Venstre are talking about in the parliment...</p>
                     <img src="img/wordclouds/V.png" class="wordcloud">
+                    <p>Do you want to know more about who Venstre is? Check out the <a href="https://da.wikipedia.org/wiki/Venstre">Wikipage</a> about them</p>
                 </div>
                 <div class="menucontentitem" data-value="radikale-venstre">
+                    <h1>Radikale Venstre</h1>
+                    <p>What Radikale Venstre are talking about in the parliment...</p>
                     <img src="img/wordclouds/RV.png" class="wordcloud">
+                    <p>Do you want to know more about who Radikale Venstre is? Check out the <a href="https://da.wikipedia.org/wiki/Radikale_Venstre">Wikipage</a> about them</p>
                 </div>
                 <div class="menucontentitem" data-value="socialistiske_folkeparti">
+                    <h1>Socialistisk Folkeparti</h1>
+                    <p>What Socialistisk Folkeparti are talking about in the parliment...</p>
                     <img src="img/wordclouds/SF.png" class="wordcloud">
+                    <p>Do you want to know more about who Socialistisk Folkeparti is? Check out the <a href="https://da.wikipedia.org/wiki/Socialistisk_Folkeparti">Wikipage</a> about them</p>
                 </div>
             </div>
+            <div class="lineseperator"></div>
         </div>
         
+        <div class="black-fill-80"></div>
+        <div class="text-container">
+            <p>Lets dig at bit deeper...</p>
+            <p>Looking at everything that has been said during the meetings at the parliment, we want to find out more about how they use language.</p>
+            <p>We will start by looking at the sentiment of the parties.</p>
+        </div>
+        <div class="canvas-container">
+            <canvas id="parties_sentiment" width="1200" height="800"></canvas>
+        </div>
+        <div class="text-container">
+            <p>The sentiment score is a relative number where we have taken into account the total amount of text for each party. This allows to better compare the parties</p>
+            <p>Looking at the data we can see that the parties with the most extreme political views (both left and right leaning), also ranks lowest in sentiment score. Coincident? We don't think so.</p>
+            <p>We will now look into the lix number, which is a number indicating readability</p>
+        </div>
 
-        
-   
+        <div class="canvas-container">
+            <canvas id="parties_lix" width="1200" height="800"></canvas>
+        </div>
+        <div class="text-container">
+            <p>The lix analysis shows that all parties use language with medium readability. We can also see that the two parties ranking lowest are parties based in greenland, which might explain the lower score.</p>
+        </div>
+        <div class="black-fill-80"></div>
+    </div>
+
+    <div class="parallax" style='background-image: url("img/politicians.jpg");background-repeat: cover; height:500px;'>
+        <div class="parallax-wrapper">
+            <div>
+                <h1>The politicians</h1>
+            </div>
+        </div>
+    </div>
+    <div class="basic-container" style="background-color: #252627;">
+        <div class="black-fill-80"></div>
+        <div class="black-fill-80"></div>
+        <div class="black-fill-80"></div>
+        <div class="black-fill-80"></div>
+        <div class="black-fill-80"></div>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="js/charts.js"></script>
 </body> 
 </html>

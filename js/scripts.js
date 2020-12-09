@@ -15,7 +15,12 @@ function changeMenuView(e){
 
 
 
+
+
 window.onload = function(){ 
     const menubar  = document.querySelector('.menubar');
     menubar.addEventListener('click', changeMenuView);
+
+
 }
+

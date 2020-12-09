@@ -12,11 +12,18 @@ h1, h2, h3, h4 {
     color: white;
 }
 
+h1 {
+    font-size: 2.6em;
+}
+
 p {
     color: white;
     font-size: 1.2em;
 }
 
+a {
+    color: #4281A4;
+}
 .parallax {  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -59,8 +66,8 @@ p {
     margin: auto;
 }
 
-.black-fill {
-    height: 120px;
+.black-fill-80 {
+    height: 80px;
     background-color: #252627;
 }
 
@@ -115,11 +122,23 @@ p {
     display: none;
 }
 
+.menucontentitem > img{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.canvas-container {
+    max-width:1000px;
+    padding: 80px 40px;
+    margin: auto;
+}
+
+
 .menucontentitemselected {
     display: block;
 }
 
-.menulineseperator {
+.lineseperator {
     margin: 20px 80px;
     height: 1px;
     background-color:#EDF5FC;
